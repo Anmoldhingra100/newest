@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weekly Data</title>
+</head>
+<body>
+    <h1>Weekly Solar Data</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Week</th>
+                <th>Total Solar Generation</th>
+                <th>Total Daily Production</th>
+                <th>Total Monthly Sales</th>
+                <th>Total Weekly Revenue</th>
+                <th>Total Invertor Power Distribution</th>
+                <th>Total Panels</th>
+                <th>Total Weather Prediction</th>
+                <th>Total Hourly Temperature</th>
+                <th>Total Humidity</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for data in weekly_data %}
+            <tr>
+                <td>{{ data.week }}</td>
+                <td>{{ data.total_solar_generation }}</td>
+                <td>{{ data.total_daily_production }}</td>
+                <td>{{ data.total_monthly_sales }}</td>
+                <td>{{ data.total_weekly_revenue }}</td>
+                <td>{{ data.total_invertor_power_distribution }}</td>
+                <td>{{ data.total_total_panels }}</td>
+                <td>{{ data.total_weather_prediction }}</td>
+                <td>{{ data.total_hourly_temperature }}</td>
+                <td>{{ data.total_humidity }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
